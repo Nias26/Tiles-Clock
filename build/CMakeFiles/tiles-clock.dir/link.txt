@@ -1,0 +1,1 @@
+/usr/bin/cc -g "CMakeFiles/tiles-clock.dir/src/main.c.o" -o tiles-clock   -L/home/Nias/Documenti/C/tiles-clock/raylib-6.0_linux_amd64/lib  -Wl,-rpath,/home/Nias/Documenti/C/tiles-clock/raylib-6.0_linux_amd64/lib -lraylib -lm
