@@ -1,0 +1,8 @@
+!./src/
+!./CMakeLists.txt
+!./assets/
+!./raylib-6.0_linux_amd64/
+!./LICENSE
+!./README.md
+
+./build/
