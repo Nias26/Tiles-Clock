@@ -1,3 +1,0 @@
-/home/Nias/Documenti/C/tiles-clock/build/CMakeFiles/tiles-clock.dir
-/home/Nias/Documenti/C/tiles-clock/build/CMakeFiles/edit_cache.dir
-/home/Nias/Documenti/C/tiles-clock/build/CMakeFiles/rebuild_cache.dir
