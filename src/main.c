@@ -59,6 +59,10 @@ int main(int argc, char **argv) {
   Texture2D sheet = LoadTexture("assets/Tiles.png");
   // Nearest-Neighbour Upscaling
   SetTextureFilter(sheet, TEXTURE_FILTER_POINT);
+  // Shader shader = LoadShader(0, "src/blur.frag");
+  // int scale_loc = GetShaderLocation(shader, "pixelScale");
+  // float pixel_scale = 2.0f;
+  // SetShaderValue(shader, scale_loc, &pixel_scale, SHADER_UNIFORM_FLOAT);
 
   Color bg = {39, 39, 39, 255};
 
@@ -93,6 +97,7 @@ int main(int argc, char **argv) {
     int x = start_x; // Just a rename for clarity
 
     BeginDrawing();
+    // BeginShaderMode(shader);
     ClearBackground(bg);
 
     // Hours
@@ -121,9 +126,11 @@ int main(int argc, char **argv) {
     DrawDigit(sheet, tm->tm_sec % 10, x, start_y, scale);
     x += digit_width + spacing;
 
+    // EndShaderMode();
     EndDrawing();
   }
 
+  // UnloadShader(shader);
   // Cleanup
   UnloadTexture(sheet);
   CloseWindow();
